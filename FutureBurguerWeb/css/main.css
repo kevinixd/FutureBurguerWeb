@@ -1,0 +1,48 @@
+/*Inicio estilo de la página principal*/
+
+.GeneralMain {
+    margin: 0%;
+    height: 100%;
+}
+
+#empleado {
+    font-size: 25px;
+}
+
+#cabecera {
+    background-color: dodgerblue;
+}
+
+#principalCategoria {
+    height: 600px;
+    width: 300px;
+    overflow-y: scroll;
+}
+
+#productos {
+    height: 600px;
+    width: 300px;
+    overflow-y: scroll;
+}
+
+.cardmain {
+    margin: auto;
+    padding: auto;
+}
+
+.main {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*Fin estilo de la página principal*/
+
+
+/*Inicio estilo bebidas calientes*/
+
+.BodyGeneral {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
