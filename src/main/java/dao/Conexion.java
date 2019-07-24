@@ -9,9 +9,9 @@ import java.util.logging.Logger;
 public class Conexion {
     private Connection con;
     
-    private static final String URL="jdbc:mysql://10.12.48.135:3306/java19_futureburguer";
-    private static final String USER="kevincruz";
-    private static final String PASSWORD="123456";
+    private static final String URL="jdbc:mysql://localhost:3306/java19_futureburguer";
+    private static final String USER="root";
+    private static final String PASSWORD="";
 
     public Connection getCon() {
         return con;
