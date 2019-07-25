@@ -77,6 +77,7 @@ public class EmpleadoControlador implements ActionListener {
                 vista.jBtnBebidas.setIcon(new ImageIcon("C:\\Users\\javam2019\\Documents\\Java\\FutureBurguer\\src\\main\\java\\img\\bebidas.png")); 
                 vista.jBtnPostres.setIcon(new ImageIcon("C:\\Users\\javam2019\\Documents\\Java\\FutureBurguer\\src\\main\\java\\img\\postres.png")); 
                 vista.jBtnSnacks.setIcon(new ImageIcon("C:\\Users\\javam2019\\Documents\\Java\\FutureBurguer\\src\\main\\java\\img\\snacks.png"));
+                //no sirve para ni mierda
                 vista.setLocationRelativeTo(null);
                 fromLogin.hide();
             } else if ((p.getNombre() != null) && (p.getTipo_empleado() == 2)) {
