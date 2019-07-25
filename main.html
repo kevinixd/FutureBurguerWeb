@@ -8,12 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
-    <script>
-        function cargar(div, destino) {
-            $(div).load(destino);
-        }
-    </script>
+
     <title>FutureBurguer</title>
 </head>
 
@@ -71,25 +66,22 @@
                 </div>
             </a>
             <!--Postres-->
-            <!--Postres-->
-            <a href="Javascript:cargar('#productos', 'pags/postres/postres.html');">
-                <div class="card rounded mt-4 cardmain" style="width: 200px;" id="postres">
-                    <img src="imgs/Postres/Postres.png" class=" card-img-top main">
-                    <div class="card-body">
-                        <p class="card-text text-center font-weight-bold">Postres</p>
-                    </div>
-                </div>
-            </a>
-            <!--Postres-->
 
         </div>
         <!--Fin Contenedor Categorias-->
         <div class="col-9 col-sm-9 border border-primary mainProductos" id="productos">
-            
+
         </div>
 
     </div>
-    <script src="js/jquery-1.12.2.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <script>
+
+        function cargar(div, destino) {
+            $(div).load(destino);
+        }
+    </script>
 </body>
 
 </html>
