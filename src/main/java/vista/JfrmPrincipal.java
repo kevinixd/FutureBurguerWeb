@@ -60,7 +60,7 @@ public class JfrmPrincipal extends javax.swing.JFrame {
         jLblUsuario.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLblUsuario.setText("Nombre Usuario");
         desktopPane.add(jLblUsuario);
-        jLblUsuario.setBounds(900, 20, 170, 24);
+        jLblUsuario.setBounds(930, 20, 170, 24);
 
         javax.swing.GroupLayout jPan2Layout = new javax.swing.GroupLayout(jPan2);
         jPan2.setLayout(jPan2Layout);
