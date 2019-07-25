@@ -31,7 +31,10 @@ public class JfrmPrincipal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLblUsuario = new javax.swing.JLabel();
         jPan2 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
+        jBtnSnacks = new javax.swing.JButton();
+        jBtnCombos = new javax.swing.JButton();
+        jBtnBebidas = new javax.swing.JButton();
+        jBtnPostres = new javax.swing.JButton();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         openMenuItem = new javax.swing.JMenuItem();
@@ -49,36 +52,61 @@ public class JfrmPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel1.setText("Usuario:");
         desktopPane.add(jLabel1);
-        jLabel1.setBounds(540, 10, 47, 16);
+        jLabel1.setBounds(820, 20, 80, 16);
 
+        jLblUsuario.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLblUsuario.setText("Nombre Usuario");
         desktopPane.add(jLblUsuario);
-        jLblUsuario.setBounds(630, 10, 100, 16);
+        jLblUsuario.setBounds(900, 20, 170, 24);
 
         javax.swing.GroupLayout jPan2Layout = new javax.swing.GroupLayout(jPan2);
         jPan2.setLayout(jPan2Layout);
         jPan2Layout.setHorizontalGroup(
             jPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
+            .addGap(0, 860, Short.MAX_VALUE)
         );
         jPan2Layout.setVerticalGroup(
             jPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
+            .addGap(0, 600, Short.MAX_VALUE)
         );
 
         desktopPane.add(jPan2);
-        jPan2.setBounds(260, 50, 570, 410);
+        jPan2.setBounds(330, 80, 860, 600);
 
-        jButton3.setText("Desayunos");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jBtnSnacks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jBtnSnacksActionPerformed(evt);
             }
         });
-        desktopPane.add(jButton3);
-        jButton3.setBounds(90, 100, 130, 32);
+        desktopPane.add(jBtnSnacks);
+        jBtnSnacks.setBounds(90, 520, 130, 130);
+
+        jBtnCombos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnCombosActionPerformed(evt);
+            }
+        });
+        desktopPane.add(jBtnCombos);
+        jBtnCombos.setBounds(90, 100, 130, 130);
+
+        jBtnBebidas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnBebidasActionPerformed(evt);
+            }
+        });
+        desktopPane.add(jBtnBebidas);
+        jBtnBebidas.setBounds(90, 240, 130, 130);
+
+        jBtnPostres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnPostresActionPerformed(evt);
+            }
+        });
+        desktopPane.add(jBtnPostres);
+        jBtnPostres.setBounds(90, 380, 130, 130);
 
         fileMenu.setMnemonic('f');
         fileMenu.setText("File");
@@ -147,12 +175,14 @@ public class JfrmPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 830, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 458, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -163,11 +193,21 @@ public class JfrmPrincipal extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_exitMenuItemActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        JfrmDesayunos des = new JfrmDesayunos();
-        des.setSize(300,200);
-        des.setVisible(rootPaneCheckingEnabled);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void jBtnSnacksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSnacksActionPerformed
+
+    }//GEN-LAST:event_jBtnSnacksActionPerformed
+
+    private void jBtnCombosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCombosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnCombosActionPerformed
+
+    private void jBtnBebidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnBebidasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnBebidasActionPerformed
+
+    private void jBtnPostresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPostresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnPostresActionPerformed
 
     /**
      * @param args the command line arguments
@@ -216,7 +256,10 @@ public class JfrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
-    private javax.swing.JButton jButton3;
+    public javax.swing.JButton jBtnBebidas;
+    public javax.swing.JButton jBtnCombos;
+    public javax.swing.JButton jBtnPostres;
+    public javax.swing.JButton jBtnSnacks;
     private javax.swing.JLabel jLabel1;
     public javax.swing.JLabel jLblUsuario;
     public javax.swing.JPanel jPan2;
