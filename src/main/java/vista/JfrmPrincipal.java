@@ -164,9 +164,7 @@ public class JfrmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_exitMenuItemActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        JfrmDesayunos des = new JfrmDesayunos();
-        des.setSize(300,200);
-        des.setVisible(rootPaneCheckingEnabled);
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
