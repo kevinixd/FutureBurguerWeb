@@ -1,0 +1,43 @@
+/*Inicio estilo de la página principal*/
+
+body, html {
+    margin: 0%;
+    height: 100%;
+}
+
+.mainProductos{
+    height: 100%;
+    width: 100%;
+}
+
+#empleado {
+    font-size: 25px;
+}
+
+#cabecera {
+    background-color: dodgerblue;
+}
+
+#principalCategoria {
+    overflow-y: scroll;
+}
+
+#productos {
+    overflow-y: scroll;
+}
+
+.cardmain {
+    margin: auto;
+    padding: auto;
+}
+
+.main {
+    width: 200px;
+    height: 200px;
+}
+
+/**/
+.alto100{
+    height: 100%;
+}
+
