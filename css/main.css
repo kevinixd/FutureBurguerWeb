@@ -41,5 +41,15 @@ body, html {
     height: 100%;
 }
 
-
+.box img{
+    width: 35%;
+    height: center;
+  }
+  @supports(object-fit: cover){
+      .box img{
+        height: 35%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
 

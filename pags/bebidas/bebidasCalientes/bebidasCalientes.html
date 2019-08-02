@@ -14,16 +14,18 @@
 <body class="border">
 
     <!--Contenedor para las bebidas calientes-->
-    <div class="row container-fluid alto100 animated zoomIn" id="bebsCalientes">
+    <div class="row container-fluid alto100 animated zoomIn" id="bebidasCalientes">
         <div class="row col-12 col-sm-12 align-self-center">
 
             <!--Cafe-->
             <div class="align-items-center col-6 col-sm-6">
                 <div class="card rounded cardmain" style="width: 200px;">
-                    <img src="../../../imgs/Bebidas/Bebidas Calientes/BebidaCaliente.png" class="card-img-top main">
+                    <a href="Javascript: cargar('#productos', 'pags/bebidas/bebidasCalientes/bebidacafe.html');">
+                    <img src="../../../imgs/Bebidas/bebidas Calientes/BebidaCaliente.png" class="card-img-top main">
                     <div class="card-body">
                         <p class="card-text text-center font-weight-bold text-primary text-decoration-none">Café</p>
                     </div>
+                    </a>
                 </div>
             </div>
             <!--Cafe-->
@@ -32,13 +34,16 @@
             <div class="align-items-center col-6 col-sm-6">
                 <div class="card rounded cardmain" style="width: 200px;">
                     <img src="../../../imgs/Bebidas/Bebidas Calientes/BebidaCaliente.png" class="card-img-top main">
+                    <a href="Javascript: cargar('#productos', 'pags/bebidas/bebidasCalientes/bebidachocolate.html');">
                     <div class="card-body">
                         <p class="card-text text-center font-weight-bold text-primary text-decoration-none">Chocolate</p>
                     </div>
+                    </a>
                 </div>
             </div>
             <!--Chocolate-->
         </div>
+        <a href="Javascript:cargar('#productos','pags/bebidas/bebidas.html');"><button type="button" class="btn btn-outline-danger btn-lg">Regresar</button></a>
     </div>
 
     <script src="../../../js/dinamismo.js"></script>
