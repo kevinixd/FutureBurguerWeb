@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#btnIncrementar").click(function () {
-        if($('#txt1').val()<5){
+        if($('#txt1').val()<10){
             btnIncrementarVal($('#txt1'));
          
         }
