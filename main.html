@@ -9,95 +9,102 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-
-    <title>FutureBurguer</title>
+ 
+        <title>FutureBurguer</title>
 </head>
 
-<body>
-
-    <!--Cabecera del navegador-->
-    <nav class="navbar navbar-light fixed-top" id="cabecera">
-        <a class="navbar-brand" href="#">
-            <img src="imgs/main/empleado.png" width="35" height="35" class="d-inline-block align-middle" alt="">
-            <span class="text-white font-weight-bold" id="empleado">Empleado</span>
-        </a>
-
-        <a href="" class="justify-content-end navbar-brand">
-            <img src="imgs/main/carrito.png" width="35" height="35" class="d-inline-block align-top" alt="">
-        </a>
-    </nav>
-    <!--Fin cabecera del navegador-->
-
-    <!--Contenedor principal-->
-    <div class="row col-12 col-sm-12 mainProductos">
-        <!--Inicio contenedor categorias-->
-        <div class="col-3 col-sm-3 mainProductos" id="principalCategoria">
-            <br>
-            <br>
-            <br>
-            <!--Combos Desayuno-->
-            <a href="Javascript:cargar('#productos','pags/combos/desayunos.html');">
-                <div class=" mt-4 cardmain" style="width: 200px;" id="combos">
-                    <img src="imgs/combos/de.png" class="card-img-top main">
-                    <div class="card-body">
-                        <p class="card-text text-center font-weight-bold text-primary text-decoration-none">Combos Desayuno</p>
-                    </div>
-                </div>
+<body id="main">
+    
+        <!--Cabecera del navegador-->
+        <nav class="navbar navbar-light fixed-top" id="cabecera">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/main/empleado.png" width="35" height="35" class="d-inline-block align-middle" alt="">
+                <span class="text-white font-weight-bold" id="empleado">Empleado</span>
             </a>
-            <!--Fin Combos Desayuno-->
-            <!--Combos Almuerzo-->
-            <a href="Javascript:cargar('#productos','pags/combos/almuerzos.html');">
-                <div class=" mt-4 cardmain " style="width: 200px;" id="combos">
-                    <img src="imgs/combos/muersos.png" class="card-img-top main">
-                    <div class="card-body">
-                        <p class="card-text text-center font-weight-bold text-primary text-decoration-none">Combos Almuerzos</p>
-                    </div>
-                </div>
-            </a>
-            <!--Fin Combos Almuerzo-->
 
-            <!--Bebidas-->
-            <a href="Javascript:cargar('#productos', 'pags/bebidas/bebidas.html');">
-                <div class=" mt-4 cardmain" style="width: 200px;" id="bebidas">
-                    <img src="imgs/Bebidas/Bebidas Frias/bebidass.png" class=" card-img-top main">
-                    <div class="card-body">
-                        <p class="card-text text-center font-weight-bold text-primary text-decoration-none">Bebidas</p>
-                    </div>
-                </div>
+            <a href="" class="justify-content-end navbar-brand">
+                <img src="imgs/main/carrito.png" width="35" height="35" class="d-inline-block align-top" alt="">
             </a>
-            <!--Fin Bebidas-->
+        </nav>
+        <!--Fin cabecera del navegador-->
 
-            <!--Postres-->
-            <a href="Javascript:cargar('#productos', 'pags/postres/postres.html');">
-                <div class=" mt-4 cardmain " style="width: 200px;" id="postres">
-                    <img src="imgs/Postres/menus.png" class=" card-img-top main">
-                    <div class="card-body">
-                        <p class="card-text text-center font-weight-bold  text-primary text-decoration-none">Postres</p>
+        <!--Contenedor principal-->
+        <div class="row col-12 col-sm-12 mainProductos">
+            <!--Inicio contenedor categorias-->
+            <div class="col-3 col-sm-3 mainProductos" id="principalCategoria">
+                <br>
+                <br>
+                <br>
+                <!--Combos Desayuno-->
+                <a href="Javascript:cargar('#productos','pags/combos/desayunos.html');">
+                    <div class=" mt-4 cardmain" style="width: 200px;" id="combos">
+                        <img src="imgs/combos/de.png" class="card-img-top main">
+                        <div class="card-body">
+                            <p class="card-text text-center font-weight-bold text-primary text-decoration-none">Combos
+                                Desayuno</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <!--Postres-->
-
-               <!--Snacks-->
-               <a href="Javascript:cargar('#productos', 'pags/snacks/snacks.html');">
-                <div class=" mt-4 cardmain " style="width: 200px;" id="snacks">
-                    <img src="imgs/Snacks/Snacks 1.png" class=" card-img-top main">
-                    <div class="card-body">
-                        <p class="card-text text-center font-weight-bold text-primary text-decoration-none">Snacks</p>
+                </a>
+                <!--Fin Combos Desayuno-->
+                <!--Combos Almuerzo-->
+                <a href="Javascript:cargar('#productos','pags/combos/almuerzos.html');">
+                    <div class=" mt-4 cardmain " style="width: 200px;" id="combos">
+                        <img src="imgs/combos/muersos.png" class="card-img-top main">
+                        <div class="card-body">
+                            <p class="card-text text-center font-weight-bold text-primary text-decoration-none">Combos
+                                Almuerzos</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <!--Snacks-->
+                </a>
+                <!--Fin Combos Almuerzo-->
 
-             
+                <!--Bebidas-->
+                <a href="Javascript:cargar('#productos', 'pags/bebidas/bebidas.html');">
+                    <div class=" mt-4 cardmain" style="width: 200px;" id="bebidas">
+                        <img src="imgs/Bebidas/Bebidas Frias/bebidass.png" class=" card-img-top main">
+                        <div class="card-body">
+                            <p class="card-text text-center font-weight-bold text-primary text-decoration-none">Bebidas
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!--Fin Bebidas-->
+
+                <!--Postres-->
+                <a href="Javascript:cargar('#productos', 'pags/postres/postres.html');">
+                    <div class=" mt-4 cardmain " style="width: 200px;" id="postres">
+                        <img src="imgs/Postres/menus.png" class=" card-img-top main">
+                        <div class="card-body">
+                            <p class="card-text text-center font-weight-bold  text-primary text-decoration-none">Postres
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!--Postres-->
+
+                <!--Snacks-->
+                <a href="Javascript:cargar('#productos', 'pags/snacks/snacks.html');">
+                    <div class=" mt-4 cardmain " style="width: 200px;" id="snacks">
+                        <img src="imgs/Snacks/Snacks 1.png" class=" card-img-top main">
+                        <div class="card-body">
+                            <p class="card-text text-center font-weight-bold text-primary text-decoration-none">Snacks
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!--Snacks-->
+
+
+
+            </div>
+            <!--Fin Contenedor Categorias-->
+            <div class="col-9 col-sm-9 border border-primary mainProductos" id="productos">
+
+            </div>
 
         </div>
-        <!--Fin Contenedor Categorias-->
-        <div class="col-9 col-sm-9 border border-primary mainProductos" id="productos">
 
-        </div>
 
-    </div>
 
     <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
     <script>
@@ -106,6 +113,13 @@
             $(div).load(destino);
         }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+  
 </body>
 
 </html>
