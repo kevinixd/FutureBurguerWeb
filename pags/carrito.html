@@ -10,24 +10,39 @@
             // Variables
             let baseDeDatos = [
                 {
-                    id: 1,
-                    nombre: 'Patata',
-                    precio: 1
+                    id: 'postres1',
+                    nombre: 'Pie de Queso',
+                    precio: 18.00
                 },
                 {
-                    id: 2,
-                    nombre: 'Cebolla',
-                    precio: 1.2
+                    id: 'postres2',
+                    nombre: 'Pie de Manzana',
+                    precio: 20.00
                 },
                 {
-                    id: 3,
-                    nombre: 'Calabacin',
-                    precio: 2.1
+                    id: 'postres3',
+                    nombre: 'Pie de Piña',
+                    precio: 22.00
                 },
                 {
-                    id: 4,
+                    id: 40,
                     nombre: 'Fresas',
                     precio: 0.6
+                },
+                {
+                    id: 50,
+                    nombre: 'Otro Producto',
+                    precio: 85
+                },
+                {
+                    id: 50,
+                    nombre: 'Otro Producto',
+                    precio: 85
+                },
+                {
+                    id: 50,
+                    nombre: 'Otro Producto',
+                    precio: 85
                 }
 
             ]
@@ -76,7 +91,7 @@
                 renderizarCarrito();
 
             }
-
+            //Gernera todos los elementos del carrito
             function renderizarCarrito () {
                 // Vaciamos todo el html
                 $carrito.textContent = '';
@@ -139,6 +154,7 @@
 <body>
     <div class="container">
         <div class="row">
+            
             <!-- Elementos generados a partir del JSON -->
             <main id="items" class="col-sm-8 row"></main>
             <!-- Carrito -->
@@ -152,5 +168,6 @@
             </aside>
         </div>
     </div>
+    
 </body>
 </html>
