@@ -14,16 +14,7 @@ $(document).ready(function () {
 
     })
 
-    $('.producto').click(function(e){
-        e.stopPropagation();
-         paypal.minicart.cart.add({
-         business: 'uhperezoscar@gmail.com', // Cuenta paypal para recibir el dinero
-         item_name: $(this).attr("titulo"),
-          amount: $(this).attr("precio"),
-          currency_code: 'USD',
-         
-         });
-    });
+ 
     
 
     function btnIncrementarVal(selector) {
