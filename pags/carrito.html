@@ -8,7 +8,7 @@
     <script>
         window.onload = function () {
             // Variables
-            let baseDeDatos = [
+            let postres = [
                 {
                     id: 'postres1',
                     nombre: 'Pie de Queso',
@@ -35,12 +35,22 @@
                     precio: 26.00
                 },
                 {
-                    id: 50,
+                    id: 'postres6',
                     nombre: 'Otro Producto',
                     precio: 85
                 },
                 {
-                    id: 50,
+                    id: 'postres7',
+                    nombre: 'Otro Producto',
+                    precio: 85
+                },
+                {
+                    id: 'postres8',
+                    nombre: 'Otro Producto',
+                    precio: 85
+                },
+                {
+                    id: 'postres9',
                     nombre: 'Otro Producto',
                     precio: 85
                 }
@@ -53,7 +63,7 @@
             let $total = document.querySelector('#total');
             // Funciones
             function renderItems () {
-                for (let info of baseDeDatos) {
+                for (let info of postres) {
                     // Estructura
                     let miNodo = document.createElement('div');
                     miNodo.classList.add('card', 'col-sm-4');
@@ -98,8 +108,8 @@
                 // Generamos los Nodos a partir de carrito
                 carrito.forEach(function (item, indice) {
                     // Obtenemos el item que necesitamos de la variable base de datos
-                    let miItem = baseDeDatos.filter(function(itemBaseDatos) {
-                        return itemBaseDatos['id'] == item;
+                    let miItem = postres.filter(function(itempostres) {
+                        return itempostres['id'] == item;
                     });
                     // Creamos el nodo del item del carrito
                     let miNodo = document.createElement('li');
@@ -134,8 +144,8 @@
                 // Recorremos el array del carrito
                 for (let item of carrito) {
                     // De cada elemento obtenemos su precio
-                    let miItem = baseDeDatos.filter(function(itemBaseDatos) {
-                        return itemBaseDatos['id'] == item;
+                    let miItem = postres.filter(function(itempostres) {
+                        return itempostres['id'] == item;
                     });
                     total = total + miItem[0]['precio'];
                 }
